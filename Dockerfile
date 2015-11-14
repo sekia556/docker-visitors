@@ -9,6 +9,7 @@ RUN apt-get update && \
 RUN wget http://www.hping.org/visitors/visitors-0.7.tar.gz
 RUN tar xvzf visitors-0.7.tar.gz
 WORKDIR visitors_0.7
+
 RUN make
 RUN cp visitors /usr/bin/
 
